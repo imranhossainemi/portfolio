@@ -42,13 +42,14 @@ This portfolio template is built with :
 ### Tech Stack <a name="tech-stack"></a>
 
 For this portfolio template design I am using mobile first approach. 
-
+<!--
 <details>
   <summary>Client</summary>
   <ul>
     <li><a href="#">HTML CSS</a></li>
   </ul>
 </details>
+-->
 <!--
 <details>
   <summary>Server</summary>
