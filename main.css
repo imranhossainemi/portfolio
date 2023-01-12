@@ -73,10 +73,10 @@
   justify-content: space-evenly;
 }
 
-.header .banner .contact ul a {
+.header .banner .contact ul li a {
   text-decoration: none;
 }
 
-.header .banner .contact ul a:hover li img {
+.header .banner .contact ul  li a:hover img {
   background-color: hsla(218, 20%, 39%, 0.391);
 }
