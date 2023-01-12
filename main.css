@@ -1,1 +1,13 @@
-h1 { color: hsl(0, 82%, 57%); }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+}
+
+body{
+    max-width: 375px;
+    height: auto;
+    margin: 0 auto;
+}
+
