@@ -20,7 +20,7 @@
   align-items: center;
 }
 
-.header .banner {
+.banner {
   width: 100%;
   height: 650px;
   display: flex;
@@ -30,7 +30,7 @@
   background-image: url("images/header-illsutration-mobile.svg");
 }
 
-.header .banner .headline h1 {
+.banner .headline h1 {
   color: hsl(218, 54%, 20%);
   font-size: 40px;
   font-weight: 700;
@@ -39,15 +39,15 @@
   text-align: center;
 }
 
-.header .banner .headline h1 label {
+.banner .headline h1 label {
   color: hsl(155, 54%, 42%);
 }
 
-.header .banner article {
+.banner .article {
   width: 325px;
 }
 
-.header .banner article p {
+.banner .article p {
   color: hsl(218, 54%, 20%);
   font-style: normal;
   font-size: 20px;
@@ -56,11 +56,11 @@
   text-align: center;
 }
 
-.header .banner .contact {
+.banner .contact {
   width: 250px;
 }
 
-.header .banner .contact ul {
+.banner .contact ul {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
