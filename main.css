@@ -47,7 +47,7 @@
     width: 325px;
 }
 
-.header .banner article {
+.header .banner article p{
     color: hsl(218, 54%, 20%);
     font-style: normal;
     font-size: 20px;
