@@ -118,6 +118,7 @@ body {
   flex-direction: column;
   width: 100%;
   height: auto;
+  align-items: center;
 }
 
 .projects .card {
@@ -143,4 +144,28 @@ body {
   background-color: hsl(0,0%,100%);
 }
 
+.card .details .project_tle {
+  color: hsl(218, 54%, 20%);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: center;
+  text-decoration: none;
+}
 
+.card .details .laguages {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.card .details .laguages li {
+  color: hsl(150, 12%, 26%);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  padding: 8px 12px;
+  background-color: hsl(156, 14%, 93%);
+  border-radius: 4px;
+}
