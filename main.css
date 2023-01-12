@@ -140,6 +140,7 @@ body {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   background-color: hsl(0, 0%, 100%);
 }
@@ -155,8 +156,9 @@ body {
 
 .card .details .laguages {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   list-style: none;
+  width: 100%;
 }
 
 .card .details .laguages li {
@@ -165,9 +167,10 @@ body {
   font-weight: 600;
   line-height: 16px;
   letter-spacing: 0.03em;
-  padding: 8px 12px;
+  padding: 4px 8px;
   background-color: hsl(156, 14%, 93%);
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .card .btm {
@@ -180,4 +183,10 @@ body {
   letter-spacing: 0.03em;
   background-color: hsl(155, 54%, 42%);
   padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.card .btm:hover {
+  box-shadow: 2px 4px 6px hsla(180, 1%, 28%, 0.397);
 }
