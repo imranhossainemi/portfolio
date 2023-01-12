@@ -141,7 +141,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: hsl(0,0%,100%);
+  background-color: hsl(0, 0%, 100%);
 }
 
 .card .details .project_tle {
@@ -168,4 +168,16 @@ body {
   padding: 8px 12px;
   background-color: hsl(156, 14%, 93%);
   border-radius: 4px;
+}
+
+.card .btm {
+  color:hsl(0, 0%, 100%);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: hsl(155, 54%, 42%);
+  padding: 8px 12px;
 }
