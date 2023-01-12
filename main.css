@@ -90,10 +90,10 @@ body {
 
 .works .title {
   width: 325px;
-  height: 120px;
+  height: 150px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 .works .title h1 {
@@ -110,4 +110,5 @@ body {
   height: 4px;
   border-radius: 24px;
   background-color: hsl(155, 54%, 42%);
+  margin-top: 25px;
 }
