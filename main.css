@@ -78,7 +78,7 @@ body {
   justify-content: space-evenly;
 }
 
-.header .banner .contact ul li a {
+.header .banner .contact a {
   text-decoration: none;
 }
 
