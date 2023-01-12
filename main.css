@@ -4,11 +4,13 @@
   box-sizing: border-box;
   font-family: 'inter', sans-serif;
 }
-body{
+
+body {
   max-width: 375px;
   height: auto;
   margin: 0 auto;
 }
+
 .header {
   display: flex;
   flex-direction: column;
