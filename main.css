@@ -27,7 +27,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-image: url("/images/header-illsutration-mobile.svg");
+  background-image: url("images/header-illsutration-mobile.svg");
 }
 
 .header .banner .headline h1 {
