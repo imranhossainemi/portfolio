@@ -77,11 +77,3 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
-
-.header .banner .contact a {
-  text-decoration: none;
-}
-
-.header .banner .contact a:hover img {
-  background-color: hsla(218, 20%, 39%, 0.391);
-}
