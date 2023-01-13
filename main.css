@@ -86,7 +86,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .works .title {
@@ -115,11 +116,12 @@ body {
 }
 
 .works .projects {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto;
   width: 100%;
   height: auto;
   align-items: center;
+  justify-content: center;
   list-style: none;
 }
 
@@ -127,8 +129,9 @@ body {
   width: 325px;
   height: 475px;
   border-radius: 8px;
-  background-color: #E9EEEC;
-  margin: 20px 0px;
+  background-color: hsl(156, 13%, 92%);
+  margin-top: 20px;
+  margin-bottom: 20px;
   border: 1px solid hsla(180, 2%, 12%, 0.26);
 }
 
