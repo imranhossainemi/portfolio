@@ -223,7 +223,7 @@ body {
   background-image: url(images/illustration-about-me-mobile.svg);
 }
 
-.about .aboutArticle h1 {
+.about .aboutArticle h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
