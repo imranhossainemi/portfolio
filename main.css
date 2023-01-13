@@ -272,7 +272,7 @@ body {
   text-align: center;
 }
 
-.skillCard .items ul {
+.skillCard .items>ul {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -281,7 +281,7 @@ body {
   gap: 8px;
 }
 
-.skillCard .items ul li {
+.skillCard .items>ul>li {
   color: hsl(155, 54%, 42%);
   font-style: normal;
   font-weight: 600;
