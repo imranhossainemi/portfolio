@@ -168,7 +168,7 @@ body {
   width: 100%;
 }
 
-.card .details .laguages>li {
+.card .details .laguages > li {
   color: hsl(150, 12%, 26%);
   font-size: 12px;
   font-weight: 600;
@@ -272,7 +272,7 @@ body {
   text-align: center;
 }
 
-.skillCard .items>ul {
+.skillCard .items > ul {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -281,7 +281,7 @@ body {
   gap: 8px;
 }
 
-.skillCard .items>ul>li {
+.skillCard .items > ul > li {
   color: hsl(155, 54%, 42%);
   font-style: normal;
   font-weight: 600;
