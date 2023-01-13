@@ -120,6 +120,7 @@ body {
   width: 100%;
   height: auto;
   align-items: center;
+  list-style: none;
 }
 
 .projects .card {
