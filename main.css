@@ -168,7 +168,7 @@ body {
   width: 100%;
 }
 
-.card .details .laguages li {
+.card .details .laguages>li {
   color: hsl(150, 12%, 26%);
   font-size: 12px;
   font-weight: 600;
