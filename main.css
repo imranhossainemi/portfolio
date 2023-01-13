@@ -178,7 +178,9 @@ body {
   background-color: hsl(156, 14%, 93%);
   border-radius: 4px;
 }
+
 /* All btm class css */
+
 .btm {
   color: hsl(0, 0%, 100%);
   font-style: normal;
@@ -235,4 +237,25 @@ body {
   font-size: 20px;
   line-height: 32px;
   color: hsl(218, 25%, 35%);
+}
+
+.about .expertise {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-rows: 33.33% 33.33% 33.33%;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.expertise .skillCard {
+  width: 325px;
+  height: 350px;
+  background-color: hsl(156, 13%, 92%);
+  border-radius: 8px;
+  border: 1px solid hsl(216, 14%, 79%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
