@@ -178,8 +178,8 @@ body {
   background-color: hsl(156, 14%, 93%);
   border-radius: 4px;
 }
-
-.card .details .btm {
+/* All btm class css */
+.btm {
   color: hsl(0, 0%, 100%);
   font-style: normal;
   font-weight: 500;
@@ -193,9 +193,10 @@ body {
   text-decoration: none;
   border: none;
   cursor: pointer;
+  text-transform: capitalize;
 }
 
-.card .details .btm:hover {
+.btm:hover {
   box-shadow: 2px 4px 6px hsla(180, 1%, 28%, 0.397);
 }
 
@@ -208,6 +209,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 .about .aboutArticle {
   display: flex;
   flex-direction: column;
@@ -217,4 +219,20 @@ body {
   height: 390px;
   text-align: center;
   background-image: url(images/illustration-about-me-mobile.svg);
+}
+
+.about .aboutArticle h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: hsl(218, 54%, 20%);
+}
+
+.about .aboutArticle p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: hsl(218, 25%, 35%);
 }
