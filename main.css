@@ -285,10 +285,10 @@ body {
   color: hsl(155, 54%, 42%);
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  padding: 4px 8px;
+  padding: 8px 12px;
   background-color: hsl(0, 0%, 100%);
   border-radius: 4px;
 }
