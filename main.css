@@ -246,6 +246,7 @@ body {
   grid-template-rows: 33.33% 33.33% 33.33%;
   gap: 20px;
   margin-top: 30px;
+  justify-content: center;
 }
 
 .expertise .skillCard {
@@ -258,4 +259,35 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+.skillCard .items h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: hsl(218, 54%, 20%);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.skillCard .items ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 100%;
+  gap: 8px;
+}
+
+.skillCard .items ul li {
+  color: hsl(155, 54%, 42%);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  padding: 4px 8px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 4px;
 }
