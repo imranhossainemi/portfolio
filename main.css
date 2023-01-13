@@ -281,7 +281,7 @@ body {
   gap: 8px;
 }
 
-.skillCard .items > ul > li {
+.skillCard .items > ul > .item {
   color: hsl(155, 54%, 42%);
   font-style: normal;
   font-weight: 600;
