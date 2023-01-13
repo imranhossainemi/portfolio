@@ -179,7 +179,7 @@ body {
   border-radius: 4px;
 }
 
-.card .btm {
+.card .details .btm {
   color: hsl(0, 0%, 100%);
   font-style: normal;
   font-weight: 500;
@@ -195,6 +195,6 @@ body {
   cursor: pointer;
 }
 
-.card .btm:hover {
+.card .details .btm:hover {
   box-shadow: 2px 4px 6px hsla(180, 1%, 28%, 0.397);
 }
