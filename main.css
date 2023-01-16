@@ -162,13 +162,14 @@ body {
 }
 
 .card .details .laguages {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
   list-style: none;
   width: 100%;
 }
 
 .card .details .laguages > li {
+  float: left;
   color: hsl(150, 12%, 26%);
   font-size: 12px;
   font-weight: 600;
