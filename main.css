@@ -166,6 +166,7 @@ body {
   justify-content: space-between; */
   list-style: none;
   width: 100%;
+  background-color: red;
 }
 
 .card .details .laguages > li {
@@ -178,8 +179,12 @@ body {
   padding: 4px 8px;
   background-color: hsl(156, 14%, 93%);
   border-radius: 4px;
+  margin-right: 8px;
 }
-
+.card .details .laguages > li:nth-child(4) {
+  float:right;
+  margin: 0;
+}
 /* All btm class css */
 
 .btm {
