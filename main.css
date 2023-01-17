@@ -366,3 +366,34 @@ body {
   text-align: center;
   color: hsl(218, 25%, 35%);
 }
+
+/* Form validation  */
+.contact input{
+  outline: none;
+}
+input[type=text]:invalid:focus {
+  background-color: pink;
+  border: 1px solid red;
+}
+input[type=email]:invalid:focus {
+  background-color: pink;
+  border: 1px solid red;
+}
+
+input[type=text]:valid:focus{
+  background-color: white;
+  border: 1px solid green;
+}
+input[type=email]:valid:focus{
+  background-color: white;
+  border: 1px solid green;
+}
+
+input[type=text]:focus{
+  background-color: lightgreen;
+  border: 1px solid green;
+}
+input[type=email]:focus{
+  background-color: lightgreen;
+  border: 1px solid green;
+}
