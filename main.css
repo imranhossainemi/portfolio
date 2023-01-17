@@ -379,7 +379,7 @@ body {
 
 #name:valid,
 #email:valid,
-#msg:valid{
+#msg:valid {
   box-shadow: 0 0 5px 1px hsl(155, 54%, 42%);
-  border: 1px solid hsl(120, 100%, 25%);
+  border: 1px solid hsla(120, 100%, 25%, 0.506);
 }
