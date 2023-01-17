@@ -387,9 +387,9 @@ body {
   border: 1px solid green;
 }
 
-.name:focus,
+/* .name:focus,
 .email:focus,
 #msg:focus {
   background-color: lightgreen;
   border: 1px solid green;
-}
+} */
