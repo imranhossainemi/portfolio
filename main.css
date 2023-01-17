@@ -68,11 +68,13 @@ body {
   text-align: center;
 }
 
-.banner .contact {
+/* Socail Media Icon */
+
+.socialMedia {
   width: 250px;
 }
 
-.banner .contact ul {
+.contact ul {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
