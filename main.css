@@ -373,32 +373,23 @@ body {
   outline: none;
 }
 
-input[type=text]:invalid:focus {
+.name:invalid:focus,
+.email:invalid:focus,
+#msg:invalid:focus {
   background-color: pink;
   border: 1px solid red;
 }
 
-input[type=email]:invalid:focus {
-  background-color: pink;
-  border: 1px solid red;
-}
-
-input[type=text]:valid:focus {
+.name:valid:focus,
+.email:valid:focus,
+#msg:valid:focus {
   background-color: white;
   border: 1px solid green;
 }
 
-input[type=email]:valid:focus {
-  background-color: white;
-  border: 1px solid green;
-}
-
-input[type=text]:focus {
-  background-color: lightgreen;
-  border: 1px solid green;
-}
-
-input[type=email]:focus {
+.name:focus,
+.email:focus,
+#msg:focus {
   background-color: lightgreen;
   border: 1px solid green;
 }
