@@ -308,6 +308,7 @@ body {
   background-repeat: no-repeat;
   background-position: bottom right;
 }
+
 .contact .contact_tle {
   width: 327px;
   height: 363px;
@@ -357,7 +358,7 @@ body {
   justify-content: space-around;
 }
 
-.footer .emailAdrs{
+.footer .emailAdrs {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
