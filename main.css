@@ -337,6 +337,7 @@ body {
   border: 1px solid hsl(147, 11%, 83%);
   border-radius: 4px;
   padding: 10px;
+  outline: none;
 }
 
 .contact .form input {
@@ -369,27 +370,16 @@ body {
 
 /* Form validation  */
 
-.contact .form input {
-  outline: none;
+#name:focus:invalid,
+#email:focus:invalid,
+#msg:focus:invalid {
+  box-shadow: 0 0 5px 1px hsl(0, 100%, 50%);
+  border: 1px solid hsla(0, 100%, 50%, 0.48);
 }
 
-.name:invalid:focus,
-.email:invalid:focus,
-#msg:invalid:focus {
-  background-color: pink;
-  border: 1px solid red;
+#name:valid,
+#email:valid,
+#msg:valid{
+  box-shadow: 0 0 5px 1px hsl(155, 54%, 42%);
+  border: 1px solid hsl(120, 100%, 25%);
 }
-
-.name:valid:focus,
-.email:valid:focus,
-#msg:valid:focus {
-  background-color: white;
-  border: 1px solid green;
-}
-
-/* .name:focus,
-.email:focus,
-#msg:focus {
-  background-color: lightgreen;
-  border: 1px solid green;
-} */
