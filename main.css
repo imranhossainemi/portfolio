@@ -368,32 +368,37 @@ body {
 }
 
 /* Form validation  */
-.contact input{
+
+.contact input {
   outline: none;
 }
+
 input[type=text]:invalid:focus {
   background-color: pink;
   border: 1px solid red;
 }
+
 input[type=email]:invalid:focus {
   background-color: pink;
   border: 1px solid red;
 }
 
-input[type=text]:valid:focus{
-  background-color: white;
-  border: 1px solid green;
-}
-input[type=email]:valid:focus{
+input[type=text]:valid:focus {
   background-color: white;
   border: 1px solid green;
 }
 
-input[type=text]:focus{
+input[type=email]:valid:focus {
+  background-color: white;
+  border: 1px solid green;
+}
+
+input[type=text]:focus {
   background-color: lightgreen;
   border: 1px solid green;
 }
-input[type=email]:focus{
+
+input[type=email]:focus {
   background-color: lightgreen;
   border: 1px solid green;
 }
