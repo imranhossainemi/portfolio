@@ -370,16 +370,16 @@ body {
 
 /* Form validation  */
 
-#name:focus:invalid,
-#email:focus:invalid,
-#msg:focus:invalid {
-  box-shadow: 0 0 5px 1px hsl(0, 100%, 50%);
-  border: 1px solid hsla(0, 100%, 50%, 0.48);
-}
-
 #name:valid,
 #email:valid,
 #msg:valid {
   box-shadow: 0 0 5px 1px hsl(155, 54%, 42%);
   border: 1px solid hsla(120, 100%, 25%, 0.506);
+}
+
+#name:focus:invalid,
+#email:focus:invalid,
+#msg:focus:invalid {
+  box-shadow: 0 0 5px 1px hsl(0, 100%, 50%);
+  border: 1px solid hsla(0, 100%, 50%, 0.48);
 }
