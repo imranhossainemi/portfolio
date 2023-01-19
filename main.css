@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'inter', sans-serif;
+}
+
+body {
+  max-width: 375px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header .navSec {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header .navSec .logo a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  color: hsl(218, 54%, 20%);
+}
+
+.banner {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url("images/header-illsutration-mobile.svg");
+}
+
+.banner .headline h1 {
+  color: hsl(218, 54%, 20%);
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 52px;
+  text-align: center;
+}
+
+.banner .headline h1 label {
+  color: hsl(155, 54%, 42%);
+}
+
+.banner .article {
+  width: 325px;
+}
+
+.banner .article p {
+  color: hsl(218, 54%, 20%);
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+}
+
+/* Socail Media Icon */
+
+.socialMedia {
+  width: 250px;
+}
+
+.socialMedia ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* works section */
+
+.works {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.works .title {
+  width: 325px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.works .title h1 {
+  color: hsl(218, 54%, 20%);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.works .title .div_bar {
+  width: 48px;
+  height: 4px;
+  border-radius: 24px;
+  background-color: hsl(155, 54%, 42%);
+  margin-top: 25px;
+}
+
+.works .projects {
+  display: grid;
+  grid-template-columns: auto;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.projects .card {
+  width: 325px;
+  height: 475px;
+  border-radius: 8px;
+  background-color: hsl(156, 13%, 92%);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid hsla(180, 2%, 12%, 0.26);
+}
+
+.card .preview {
+  width: 100%;
+  height: 255px;
+}
+
+.card .details {
+  width: 100%;
+  height: 218px;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.card .details .project_tle {
+  color: hsl(218, 54%, 20%);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.card .details .laguages {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 100%;
+}
+
+.card .details .laguages > li {
+  color: hsl(150, 12%, 26%);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  padding: 4px 8px;
+  background-color: hsl(156, 14%, 93%);
+  border-radius: 4px;
+}
+
+/* All btm class css */
+
+.btm {
+  color: hsl(0, 0%, 100%);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: hsl(155, 54%, 42%);
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.btm:hover {
+  box-shadow: 2px 4px 6px hsla(180, 1%, 28%, 0.397);
+}
+
+/* about me */
+
+.about {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about .aboutArticle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 350px;
+  height: 390px;
+  text-align: center;
+  background-image: url(images/illustration-about-me-mobile.svg);
+}
+
+.about .aboutArticle h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: hsl(218, 54%, 20%);
+}
+
+.about .aboutArticle p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: hsl(218, 25%, 35%);
+}
+
+.about .expertise {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-rows: 33.33% 33.33% 33.33%;
+  gap: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.expertise .skillCard {
+  width: 325px;
+  height: 350px;
+  background-color: hsl(156, 13%, 92%);
+  border-radius: 8px;
+  border: 1px solid hsl(216, 14%, 79%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skillCard .items h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: hsl(218, 54%, 20%);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.skillCard .items > ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 100%;
+  gap: 8px;
+}
+
+.skillCard .items > ul > .item {
+  color: hsl(155, 54%, 42%);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  padding: 8px 12px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 4px;
+}
+
+/* Contact */
+
+.contact {
+  width: 100%;
+  height: 880px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(images/Frame.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.contact .contact_tle {
+  width: 327px;
+  height: 363px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: hsl(218, 54%, 20%);
+}
+
+.contact .form {
+  width: 325px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contact .form input,
+.contact .form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: hsl(0, 0%, 100%);
+  border: 1px solid hsl(147, 11%, 83%);
+  border-radius: 4px;
+  padding: 10px;
+  outline: none;
+}
+
+.contact .form input {
+  height: 48px;
+}
+
+.contact .form textarea {
+  height: 115px;
+}
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer .emailAdrs {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: hsl(218, 25%, 35%);
+}
+
+/* Form validation  */
+
+#name:valid,
+#email:valid,
+#msg:valid {
+  box-shadow: 0 0 5px 1px hsl(155, 54%, 42%);
+  border: 1px solid hsla(120, 100%, 25%, 0.506);
+}
+
+#name:focus:invalid,
+#email:focus:invalid,
+#msg:focus:invalid {
+  box-shadow: 0 0 5px 1px hsl(0, 100%, 50%);
+  border: 1px solid hsla(0, 100%, 50%, 0.48);
+}

@@ -78,7 +78,7 @@ For this portfolio template design I am using mobile first approach.
 
 > You can live demo form here.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link]https://imranhossainemi.github.io/portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
