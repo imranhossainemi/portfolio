@@ -594,6 +594,7 @@ body {
   }
 
   .footer {
+    height: 75px;
     margin-top: 15px;
     border-top: 1px solid hsl(150, 12%, 26%);
   }
