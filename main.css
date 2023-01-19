@@ -332,7 +332,7 @@ body {
   height: 363px;
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 52px;
   text-align: center;
   color: hsl(218, 54%, 20%);
@@ -542,5 +542,17 @@ body {
     grid-template: 1fr / 1fr 1fr 1fr;
     align-items: center;
     gap: 24px;
+  }
+
+  /* Contact section */
+
+  .contact {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contact .contact_tle {
+    width: 465px;
+    text-align: left;
   }
 }
