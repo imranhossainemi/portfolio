@@ -402,7 +402,14 @@ body {
     margin: 0 auto;
     border: 1px solid black;
   }
+
+  /* Display None functionality */
   
+  .header .navSec .logo ,
+  .mobile-nav-btm {
+    display: none;
+  }
+
   /* Header section Desktop */
 
   .header {
@@ -412,16 +419,31 @@ body {
     left: 0px;
     top: 0px;
   }
-  .header .navSec .logo {
-    display: none;
-  }
-  .header .navSec nav .mobile-nav-btm {
-    display: none;
-  }
 
   .header nav .navigation {
     display: flex;
     list-style: none;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .header nav .navigation .nav-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 12px;
+    gap: 10px;
+    width: 87px;
+    height: 40px;
+  }
+
+  .header nav .navigation .nav-item a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: hsl(218, 31%, 30%);
+    text-decoration: none;
   }
 
   /* Banner section Desktop */
