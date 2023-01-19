@@ -220,6 +220,12 @@ body {
 
 .btm:hover {
   box-shadow: 2px 4px 6px hsla(180, 1%, 28%, 0.397);
+  background-color: hsl(155, 54%, 43%);
+}
+
+.btm:focus,
+.btm:enabled {
+  background-color: hsl(155, 54%, 46%);
 }
 
 /* about me */
