@@ -104,6 +104,7 @@ body {
   height: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -492,5 +493,21 @@ body {
 
   .banner .scroll img {
     margin-top: 20px;
+  }
+
+  /* Works section  */
+
+  .works .title {
+    width: 100%;
+  }
+
+  .works .projects {
+    grid-template: 1fr / 1fr 1fr 1fr;
+    gap: 24px;
+    width: 1171px;
+  }
+
+  .projects .card {
+    width: 370px;
   }
 }
