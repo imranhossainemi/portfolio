@@ -81,6 +81,10 @@ body {
   text-align: center;
 }
 
+.scroll {
+  text-align: center;
+}
+
 /* Socail Media Icon */
 
 .socialMedia {
@@ -456,8 +460,35 @@ body {
     justify-content: center;
   }
 
-  .banner .headline {
+  .banner .headline,
+  .banner .article,
+  .banner .scroll {
     width: 920px;
+    margin-bottom: 24px;
+  }
+
+  .banner .headline {
     height: 114px;
+  }
+
+  .banner .article {
+    height: 96px;
+  }
+
+  .banner .article p {
+    line-height: 32px;
+    width: 84%;
+    margin: 0 auto;
+  }
+
+  .banner .scroll {
+    height: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner .scroll img {
+    margin-top: 20px;
   }
 }
