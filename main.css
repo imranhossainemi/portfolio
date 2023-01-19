@@ -405,7 +405,7 @@ body {
 
   /* Display None functionality */
   
-  .header .navSec .logo ,
+  .header .navSec .logo,
   .mobile-nav-btm {
     display: none;
   }
