@@ -347,6 +347,10 @@ body {
   align-items: center;
 }
 
+.contact .form .desktop-name {
+  display: none;
+}
+
 .contact .form input,
 .contact .form textarea {
   width: 100%;
@@ -390,17 +394,23 @@ body {
 
 #name:valid,
 #email:valid,
-#msg:valid {
+#msg:valid,
+#f-name:valid,
+#l-name:valid {
   box-shadow: 0 0 5px 1px hsl(155, 54%, 42%);
   border: 1px solid hsla(120, 100%, 25%, 0.506);
 }
 
 #name:focus:invalid,
 #email:focus:invalid,
+#f-name:focus:invalid,
+#l-name:focus:invalid,
 #msg:focus:invalid {
   box-shadow: 0 0 5px 1px hsl(0, 100%, 50%);
   border: 1px solid hsla(0, 100%, 50%, 0.48);
 }
+
+/* Desktop version CSS */
 
 @media screen and (min-width: 768px) {
   body {
@@ -549,10 +559,46 @@ body {
   .contact {
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    background-image: url(images/contact.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
   }
 
   .contact .contact_tle {
     width: 465px;
+    height: 200px;
     text-align: left;
+    margin-right: 50px;
+  }
+
+  .contact .form {
+    width: 660px;
+    height: 500px;
+    align-items: flex-start;
+  }
+
+  .contact .form .desktop-name {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .contact .form #name {
+    display: none;
+  }
+
+  .contact .form .desktop-name #f-name,
+  .contact .form .desktop-name #l-name {
+    width: 300px;
+  }
+
+  .footer {
+    margin-top: 15px;
+    border-top: 1px solid hsl(150, 12%, 26%);
+  }
+
+  .footer .emailAdrs {
+    display: none;
   }
 }
