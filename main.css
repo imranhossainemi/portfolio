@@ -400,17 +400,13 @@ body {
 
 #name:valid,
 #email:valid,
-#msg:valid,
-#f-name:valid,
-#l-name:valid {
+#msg:valid {
   box-shadow: 0 0 5px 1px hsl(155, 54%, 42%);
   border: 1px solid hsla(120, 100%, 25%, 0.506);
 }
 
 #name:focus:invalid,
 #email:focus:invalid,
-#f-name:focus:invalid,
-#l-name:focus:invalid,
 #msg:focus:invalid {
   box-shadow: 0 0 5px 1px hsl(0, 100%, 50%);
   border: 1px solid hsla(0, 100%, 50%, 0.48);
@@ -587,10 +583,6 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-  }
-
-  .contact .form #name {
-    display: none;
   }
 
   .contact .form .desktop-name #f-name,
