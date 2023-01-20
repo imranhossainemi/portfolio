@@ -470,7 +470,7 @@ body {
     height: 1035px;
     background-image: url(images/Header-llustration-desktop.svg);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
     justify-content: center;
   }
 
@@ -517,9 +517,10 @@ body {
   }
 
   .works .projects {
-    grid-template: 1fr / 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 24px;
-    width: 1171px;
   }
 
   .projects .card {
@@ -548,9 +549,9 @@ body {
   }
 
   .about .expertise {
-    width: 1171px;
-    height: 400px;
-    grid-template: 1fr / 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     gap: 24px;
   }
@@ -559,6 +560,7 @@ body {
 
   .contact {
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     background-image: url(images/contact.png);
