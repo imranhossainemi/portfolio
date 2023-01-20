@@ -85,7 +85,7 @@ body {
   text-align: center;
 }
 
-.scroll img{
+.scroll img {
   animation: up-down 3s infinite;
   position: relative;
 }
@@ -101,10 +101,9 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
-.socialMedia ul li a img:hover{
+
+.socialMedia ul li a img:hover {
   transform: scale(2);
-  border: 1px solid hsla(219, 25%, 35%, 0.324);
-  border-radius: 4px;
 }
 
 /* works section */
@@ -616,10 +615,11 @@ body {
 
   @keyframes up-down {
     0% {
-     top: 0;
+      top: 0;
     }
+
     100% {
-     top: 100px;
+      top: 100px;
     }
   }
 }
