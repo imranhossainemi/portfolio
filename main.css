@@ -616,10 +616,18 @@ body {
   @keyframes up-down {
     0% {
       top: 0;
+      border-radius: 50%;
+    }
+
+    30% {
+      background-color: hsl(155, 54%, 43%);
+      border-radius: 50%;
+      padding: 5px;
     }
 
     100% {
       top: 100px;
+      border-radius: 50%;
     }
   }
 }
