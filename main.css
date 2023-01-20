@@ -85,6 +85,11 @@ body {
   text-align: center;
 }
 
+.scroll img{
+  animation: up-down 3s infinite;
+  position: relative;
+}
+
 /* Socail Media Icon */
 
 .socialMedia {
@@ -98,6 +103,8 @@ body {
 }
 .socialMedia ul li a img:hover{
   transform: scale(2);
+  border: 1px solid hsla(219, 25%, 35%, 0.324);
+  border-radius: 4px;
 }
 
 /* works section */
@@ -603,5 +610,16 @@ body {
 
   .footer .emailAdrs {
     display: none;
+  }
+
+  /* Collaboration Animation part */
+
+  @keyframes up-down {
+    0% {
+     top: 0;
+    }
+    100% {
+     top: 100px;
+    }
   }
 }
