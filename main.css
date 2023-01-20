@@ -11,6 +11,8 @@ body {
   margin: 0 auto;
 }
 
+/* Header section */
+
 .header {
   display: flex;
   flex-direction: column;
@@ -31,6 +33,17 @@ body {
   font-style: normal;
   color: hsl(218, 54%, 20%);
 }
+
+.header nav .navigation {
+  display: none;
+}
+
+.header nav .mobile-nav-btm {
+  border: none;
+  border-radius: 4px;
+}
+
+/* Banner Section */
 
 .banner {
   width: 100%;
@@ -68,6 +81,10 @@ body {
   text-align: center;
 }
 
+.scroll {
+  text-align: center;
+}
+
 /* Socail Media Icon */
 
 .socialMedia {
@@ -87,6 +104,7 @@ body {
   height: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -200,8 +218,14 @@ body {
   text-transform: capitalize;
 }
 
+.btm:focus,
 .btm:hover {
   box-shadow: 2px 4px 6px hsla(180, 1%, 28%, 0.397);
+  background-color: hsl(155, 54%, 43%);
+}
+
+.btm:enabled {
+  background-color: hsl(155, 54%, 46%);
 }
 
 /* about me */
@@ -314,7 +338,7 @@ body {
   height: 363px;
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 52px;
   text-align: center;
   color: hsl(218, 54%, 20%);
@@ -327,6 +351,10 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.contact .form .desktop-name {
+  display: none;
 }
 
 .contact .form input,
@@ -382,4 +410,195 @@ body {
 #msg:focus:invalid {
   box-shadow: 0 0 5px 1px hsl(0, 100%, 50%);
   border: 1px solid hsla(0, 100%, 50%, 0.48);
+}
+
+/* Desktop version CSS */
+
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 1440px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* Display None functionality */
+
+  .header .navSec .logo,
+  .mobile-nav-btm {
+    display: none;
+  }
+
+  /* Header section Desktop */
+
+  .header {
+    position: absolute;
+    width: 100%;
+    height: 72px;
+    top: 0;
+    left: 0;
+  }
+
+  .header nav .navigation {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .header nav .navigation .nav-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 12px;
+    gap: 10px;
+    width: 87px;
+    height: 40px;
+  }
+
+  .header nav .navigation .nav-item a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: hsl(218, 31%, 30%);
+    text-decoration: none;
+  }
+
+  /* Banner section Desktop */
+
+  .banner {
+    height: 1035px;
+    background-image: url(images/Header-llustration-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+  }
+
+  .banner .headline,
+  .banner .article,
+  .banner .scroll {
+    width: 920px;
+    margin-bottom: 24px;
+  }
+
+  .banner .headline {
+    height: 114px;
+  }
+
+  .banner .article {
+    height: 96px;
+  }
+
+  .banner .article p {
+    line-height: 32px;
+    width: 84%;
+    margin: 0 auto;
+  }
+
+  .banner .scroll {
+    height: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner .scroll img {
+    margin-top: 20px;
+  }
+
+  /* Works section  */
+
+  .works {
+    padding: 80px 0;
+  }
+
+  .works .title {
+    width: 100%;
+  }
+
+  .works .projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .projects .card {
+    width: 370px;
+  }
+
+  /* About section */
+
+  .about {
+    background-image: url(images/illustration\ about\ me\ desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  .about .aboutArticle {
+    width: 100%;
+    height: 240px;
+    background-image: url(images/illustration-about-me-2-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    margin-top: 110px;
+  }
+
+  .about .aboutArticle p {
+    width: 770px;
+  }
+
+  .about .expertise {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+  }
+
+  /* Contact section */
+
+  .contact {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/contact.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  .contact .contact_tle {
+    width: 465px;
+    height: 200px;
+    text-align: left;
+    margin-right: 50px;
+  }
+
+  .contact .form {
+    width: 660px;
+    height: 500px;
+    align-items: flex-start;
+  }
+
+  .contact .form .desktop-name {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .contact .form .desktop-name #f-name,
+  .contact .form .desktop-name #l-name {
+    width: 300px;
+  }
+
+  .footer {
+    height: 75px;
+    margin-top: 15px;
+    border-top: 1px solid hsl(150, 12%, 26%);
+  }
+
+  .footer .emailAdrs {
+    display: none;
+  }
 }
