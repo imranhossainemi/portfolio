@@ -65,12 +65,25 @@ body {
   animation-name: intro;
   animation-duration: 4s;
 }
+
 @keyframes intro {
-  0%   {color: red;}
-  25%  {color: yellow;}
-  50%  {color: blue;}
-  100% {color: hsl(218, 54%, 20%);}
+  0% {
+    color: red;
+  }
+
+  25% {
+    color: yellow;
+  }
+
+  50% {
+    color: blue;
+  }
+
+  100% {
+    color: hsl(218, 54%, 20%);
+  }
 }
+
 .banner .headline h1 label {
   color: hsl(155, 54%, 42%);
 }
@@ -240,7 +253,8 @@ body {
   background-color: hsl(155, 54%, 43%);
   transform: translateY(4px);
 }
-.btm:active{
+
+.btm:active {
   transform: translateY(4px);
 }
 
