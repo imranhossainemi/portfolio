@@ -62,6 +62,26 @@ body {
   font-style: normal;
   line-height: 52px;
   text-align: center;
+  animation-name: intro;
+  animation-duration: 4s;
+}
+
+@keyframes intro {
+  0% {
+    color: red;
+  }
+
+  25% {
+    color: yellow;
+  }
+
+  50% {
+    color: blue;
+  }
+
+  100% {
+    color: hsl(218, 54%, 20%);
+  }
 }
 
 .banner .headline h1 label {
@@ -85,6 +105,11 @@ body {
   text-align: center;
 }
 
+.scroll img {
+  animation: up-down 3s infinite;
+  position: relative;
+}
+
 /* Socail Media Icon */
 
 .socialMedia {
@@ -95,6 +120,10 @@ body {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
+}
+
+.socialMedia ul li a img:hover {
+  transform: scale(2);
 }
 
 /* works section */
@@ -222,6 +251,11 @@ body {
 .btm:hover {
   box-shadow: 2px 4px 6px hsla(180, 1%, 28%, 0.397);
   background-color: hsl(155, 54%, 43%);
+  transform: translateY(4px);
+}
+
+.btm:active {
+  transform: translateY(4px);
 }
 
 .btm:enabled {
@@ -600,5 +634,25 @@ body {
 
   .footer .emailAdrs {
     display: none;
+  }
+
+  /* Collaboration Animation part */
+
+  @keyframes up-down {
+    0% {
+      top: 0;
+      border-radius: 50%;
+    }
+
+    30% {
+      background-color: hsl(155, 54%, 43%);
+      border-radius: 50%;
+      padding: 5px;
+    }
+
+    100% {
+      top: 100px;
+      border-radius: 50%;
+    }
   }
 }
