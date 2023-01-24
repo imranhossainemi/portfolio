@@ -84,7 +84,7 @@ body {
   }
 }
 
-.banner .headline h1 label {
+.banner .headline h1 span {
   color: hsl(155, 54%, 42%);
 }
 
@@ -387,8 +387,12 @@ body {
   align-items: center;
 }
 
-.contact .form .desktop-name {
-  display: none;
+.contact .form label {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 52px;
+  color: hsl(218, 54%, 20%);
 }
 
 .contact .form input,
