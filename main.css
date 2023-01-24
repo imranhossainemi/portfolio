@@ -342,14 +342,14 @@ body {
 }
 
 .skillCard .items > ul > .item {
-  color: hsl(155, 54%, 42%);
+  color: rgb(13, 38, 28)
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   padding: 8px 12px;
-  background-color: hsl(0, 0%, 100%);
+  background-color: rgb(255, 255, 255);
   border-radius: 4px;
 }
 
