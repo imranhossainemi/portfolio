@@ -84,7 +84,7 @@ body {
   }
 }
 
-.banner .headline h1 label {
+.banner .headline h1 span {
   color: hsl(155, 54%, 42%);
 }
 
@@ -231,14 +231,14 @@ body {
 /* All btm class css */
 
 .btm {
-  color: hsl(0, 0%, 100%);
+  color: #333;
   font-style: normal;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 17pt;
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
-  background-color: hsl(155, 54%, 42%);
+  background-color: rgb(54, 181, 128);
   padding: 8px 12px;
   border-radius: 4px;
   text-decoration: none;
@@ -342,14 +342,14 @@ body {
 }
 
 .skillCard .items > ul > .item {
-  color: hsl(155, 54%, 42%);
+  color: rgb(13, 38, 28);
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   padding: 8px 12px;
-  background-color: hsl(0, 0%, 100%);
+  background-color: rgb(255, 255, 255);
   border-radius: 4px;
 }
 
@@ -387,8 +387,12 @@ body {
   align-items: center;
 }
 
-.contact .form .desktop-name {
-  display: none;
+.contact .form label {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 52px;
+  color: hsl(218, 54%, 20%);
 }
 
 .contact .form input,
