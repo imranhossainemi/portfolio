@@ -342,7 +342,7 @@ body {
 }
 
 .skillCard .items > ul > .item {
-  color: rgb(13, 38, 28)
+  color: rgb(13, 38, 28);
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
