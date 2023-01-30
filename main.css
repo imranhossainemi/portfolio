@@ -43,6 +43,10 @@ body {
   border-radius: 4px;
 }
 
+.header nav .btm-x {
+  display: none;
+}
+
 /* Banner Section */
 
 .banner {
