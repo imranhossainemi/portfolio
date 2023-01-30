@@ -34,6 +34,7 @@ This is my personal portfolio template.Here, I will display my personal porject 
 This portfolio template is built with :
     1. HTML
     2. CSS
+    3. JavaScript
 ### Tech Stack <a name="tech-stack"></a>
 
 For this portfolio template design I am using mobile first approach. 
