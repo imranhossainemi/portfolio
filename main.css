@@ -28,6 +28,7 @@ body {
 }
 
 .header .navSec.navSec2 {
+  width: 90%;
   justify-content: end;
 }
 
