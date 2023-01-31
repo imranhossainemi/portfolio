@@ -11,6 +11,8 @@ menuBtn.addEventListener('click', () => {
 document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
   menuBtn.classList.remove('active');
   navigation.classList.remove('active');
+  navSec.classList.remove('navSec2');
+  logo.classList.remove('hide');
 }));
 
 window.addEventListener('scroll', function () {
