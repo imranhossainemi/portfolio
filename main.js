@@ -10,3 +10,8 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   menuBtn.classList.remove('active');
   navigation.classList.remove('active');
 }));
+
+window.addEventListener('scroll', function () {
+  const header = document.querySelector('.header');
+  header.classList.toggle('sticky', this.window.scrollY > 0);
+});
