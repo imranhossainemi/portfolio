@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'inter', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -22,8 +23,13 @@ body {
   width: 100%;
   height: 75px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+}
+
+.header .navSec.navSec2 {
+  width: 90%;
+  justify-content: end;
 }
 
 .header .navSec .logo a {
@@ -32,15 +38,65 @@ body {
   font-weight: 400;
   font-style: normal;
   color: hsl(218, 54%, 20%);
+  display: block;
 }
 
-.header nav .navigation {
+.header .navSec .logo.hide {
   display: none;
+}
+
+.navigation {
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  gap: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 100%);
+  width: 100%;
+  height: 100vh;
+  transition: 0.3s;
+}
+
+.header .navSec nav .navigation .nav-item {
+  width: 85%;
+  height: 50px;
+  list-style: none;
+  margin-left: 50px;
+}
+
+.header .navSec nav .navigation .nav-item a {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  text-decoration: none;
+  color: hsl(150, 12%, 26%);
+}
+
+.navigation.active {
+  left: 0;
 }
 
 .header nav .mobile-nav-btm {
   border: none;
   border-radius: 4px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-image: url('images/Enabled.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(0, 0%, 100%);
+  float: right;
+}
+
+.header nav .mobile-nav-btm.active {
+  width: 15px;
+  height: 15px;
+  background-image: url('images/x.png');
+  opacity: 0.8;
 }
 
 /* Banner Section */
@@ -62,29 +118,9 @@ body {
   font-style: normal;
   line-height: 52px;
   text-align: center;
-  animation-name: intro;
-  animation-duration: 4s;
 }
 
-@keyframes intro {
-  0% {
-    color: red;
-  }
-
-  25% {
-    color: yellow;
-  }
-
-  50% {
-    color: blue;
-  }
-
-  100% {
-    color: hsl(218, 54%, 20%);
-  }
-}
-
-.banner .headline h1 label {
+.banner .headline h1 span {
   color: hsl(155, 54%, 42%);
 }
 
@@ -103,11 +139,6 @@ body {
 
 .scroll {
   text-align: center;
-}
-
-.scroll img {
-  animation: up-down 3s infinite;
-  position: relative;
 }
 
 /* Socail Media Icon */
@@ -472,14 +503,34 @@ body {
     left: 0;
   }
 
+  .active-link {
+    border-bottom: 2px solid hsl(155, 54%, 42%);
+  }
+
+  .header.sticky {
+    position: sticky;
+    background-color: hsl(0, 0%, 100%);
+    border-bottom: 1px solid hsl(218, 54%, 20%);
+    z-index: 999;
+  }
+
   .header nav .navigation {
     display: flex;
     list-style: none;
     align-items: center;
     gap: 8px;
+    position: relative;
+    left: 0;
+    top: 0;
+    flex-direction: row;
+    background-color: transparent;
+    width: inherit;
+    height: inherit;
+    justify-content: flex-start;
+    transition: none;
   }
 
-  .header nav .navigation .nav-item {
+  .header .navSec nav .navigation .nav-item {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -489,7 +540,7 @@ body {
     height: 40px;
   }
 
-  .header nav .navigation .nav-item a {
+  .header .navSec nav .navigation .nav-item a {
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -538,6 +589,8 @@ body {
 
   .banner .scroll img {
     margin-top: 20px;
+    animation: up-down 3s infinite;
+    position: relative;
   }
 
   /* Works section  */
