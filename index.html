@@ -15,28 +15,24 @@
                 <a href="#">welcome</a>
             </div>
             <nav>
-                <button class="mobile-nav-btm btm-x" type="button">
-                    <img src="images/x.png" alt="colse navigation">
+                <button class="mobile-nav-btm" id="open" type="button">
                 </button>
                 <ul class="navigation">
                     <li class="nav-item">
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about">About</a>
+                        <a href="#about" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact">Contact</a>
+                        <a href="#contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
-                <button class="mobile-nav-btm" type="button">
-                    <img src="images/Enabled.png" alt="open navigation">
-                </button>
             </nav>
         </div>
     </header>
     <main>
-        <section class="banner">
+        <div class="banner">
             <div class="headline">
                 <h1>Hey there. I’m Imran Hossain <br> <span>I’m a software developer</span> </h1>
             </div>
@@ -66,7 +62,7 @@
             <div class="scroll">
                 <img  src="images/Disabled.png" alt="scroll-down-arrow">
             </div>
-        </section>
+        </div>
         <!-- recent works -->
         <section class="works" id="portfolio">
             <div class="title">
@@ -271,24 +267,6 @@
                 </button>
             </form>
         </section>
-        <!-- Contact Form -->
-        <section class="contact" id="contact">
-            <h2 class="contact_tle">
-                I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
-            </h2>
-            <form action="https://formspree.io/f/xzbqzryz" method="POST" class="form">
-                <label for="name">Full Name: </label>
-                <input id="name" type="text" name="name" placeholder="Full Name" maxlength="30" required>
-                <label for="email">Email address: </label>
-                <input id="email" type="email" name="email" placeholder="Email address" required>
-                <label for="msg">Write a message to me: </label>
-                <textarea name="msg" id="msg" placeholder="Type something" maxlength="500" rows="5" required>
-                </textarea>
-                <button class="btm" type="submit">
-                    Get In touch
-                </button>
-            </form>
-        </section>     
     </main>
     <!-- Footer -->
     <footer class="footer">
