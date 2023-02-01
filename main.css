@@ -89,7 +89,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: hsl(0, 0%, 100%);
-  float: right;
 }
 
 .header nav .mobile-nav-btm.active {
@@ -477,6 +476,78 @@ body {
   border: 1px solid hsla(0, 100%, 50%, 0.48);
 }
 
+/* Modal design for modile */
+
+.modal {
+  width: 315px;
+  height: 815px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid hsl(218, 25%, 35%);
+  border-radius: 8px;
+}
+
+.works .modal .closeBtnDiv {
+  position: absolute;
+  left: 315px;
+}
+
+.works .modal .closeBtnDiv .closeBtn {
+  width: 15px;
+  height: 15px;
+  background-image: url('images/x.png');
+  opacity: 0.8;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal .imgDesk {
+  display: none;
+}
+
+.works .modal h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: hsl(218, 54%, 20%);
+}
+
+.works .modal .tech {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px 0;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.works .modal .tech .tech-item {
+  color: hsl(218, 25%, 35%);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  padding: 8px 12px;
+  background-color: hsl(147, 11%, 83%);
+  border-radius: 4px;
+}
+
+.works .modal p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: hsl(218, 31%, 30%);
+}
+
 /* Desktop version CSS */
 
 @media screen and (min-width: 768px) {
@@ -708,4 +779,6 @@ body {
       border-radius: 50%;
     }
   }
+
+  /* Modal Design For desktop */
 }
