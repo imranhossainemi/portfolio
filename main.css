@@ -167,6 +167,7 @@ body {
   align-items: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .works .title {
@@ -486,11 +487,21 @@ body {
   flex-direction: column;
   border: 1px solid hsl(218, 25%, 35%);
   border-radius: 8px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.modal.activeModal {
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .works .modal .closeBtnDiv {
   position: absolute;
-  left: 315px;
+  inset: 3% 0 0 85%;
 }
 
 .works .modal .closeBtnDiv .closeBtn {
@@ -546,6 +557,45 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: hsl(218, 31%, 30%);
+}
+
+.works .modal .divBtn {
+  width: 100%;
+  padding-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.works .modal .divBtn button {
+  width: 141px;
+  height: 48px;
+  background-color: hsl(155, 54%, 46%);
+  border-radius: 4px;
+  color: hsl(0, 0%, 100%);
+  border: none;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsla(150, 12%, 26%, 0.473);
+  pointer-events: none;
+}
+
+#overlay.activeModal {
+  opacity: 1;
+  pointer-events: all;
 }
 
 /* Desktop version CSS */
