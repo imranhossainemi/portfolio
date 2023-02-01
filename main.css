@@ -493,6 +493,7 @@ body {
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
   background-color: hsl(0, 0%, 100%);
+  z-index: 9999;
 }
 
 .modal.activeModal {
@@ -561,16 +562,17 @@ body {
 
 .works .modal .divBtn {
   width: 100%;
-  padding-top: 5px;
+  padding-top: 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.works .modal .divBtn button {
+.works .modal .divBtn .btnLive,
+.works .modal .divBtn .btnSource {
   width: 141px;
-  height: 48px;
+  padding: 8px 15px;
   background-color: hsl(155, 54%, 46%);
   border-radius: 4px;
   color: hsl(0, 0%, 100%);
@@ -579,6 +581,8 @@ body {
   font-size: 17px;
   line-height: 24px;
   cursor: pointer;
+  text-align: center;
+  text-decoration: none;
 }
 
 #overlay {
@@ -619,7 +623,7 @@ body {
   .header {
     position: absolute;
     width: 100%;
-    height: 72px;
+    height: 52px;
     top: 0;
     left: 0;
   }
@@ -831,4 +835,47 @@ body {
   }
 
   /* Modal Design For desktop */
+
+  .modal {
+    width: 820px;
+    height: 933px;
+  }
+
+  .works .modal .closeBtnDiv {
+    position: relative;
+    inset: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .works .modal .closeBtnDiv .closeBtn {
+    background-color: hsl(147, 11%, 83%);
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
+    float: right;
+  }
+
+  .modal .imgDesk {
+    display: block;
+  }
+
+  .modal .imgMob {
+    display: none;
+  }
+
+  .works .modal h2 {
+    width: 590px;
+  }
+
+  .works .modal .tech {
+    width: 290px;
+  }
+
+  .works .modal .divBtn {
+    width: 325px;
+    height: 200px;
+    position: absolute;
+    inset: 60% 0 0 59%;
+  }
 }
