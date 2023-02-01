@@ -19,6 +19,7 @@ const closeBtnDiv = document.createElement('div');
 closeBtnDiv.className = 'closeBtnDiv';
 const closeBtn = document.createElement('button');
 closeBtn.className = 'closeBtn';
+closeBtn.setAttribute('data-close-button', '#modal');
 closeBtnDiv.appendChild(closeBtn);
 const projectImgdesktop = document.createElement('img');
 projectImgdesktop.className = 'imgDesk';
@@ -45,12 +46,18 @@ ul.appendChild(li);
 li.className = 'tech-item';
 const divBtn = document.createElement('div');
 divBtn.className = 'divBtn';
-const btnLive = document.createElement('button');
+const btnLive = document.createElement('a');
 btnLive.className = 'btnLive';
 btnLive.textContent = 'See Live';
-const btnSource = document.createElement('button');
+const att = document.createAttribute('href');
+att.value = '#';
+const attTwo = document.createAttribute('href');
+attTwo.value = '#';
+btnLive.setAttributeNode(att);
+const btnSource = document.createElement('a');
 btnSource.className = 'btnSource';
 btnSource.textContent = 'See Source';
+btnSource.setAttributeNode(attTwo);
 divBtn.appendChild(btnLive);
 divBtn.appendChild(btnSource);
 modal.appendChild(closeBtnDiv);
@@ -60,3 +67,35 @@ modal.appendChild(h2);
 modal.appendChild(ul);
 modal.appendChild(p);
 modal.appendChild(divBtn);
+
+const openModalBtn = document.querySelectorAll('[data-modal-target]');
+const closeModalBtn = document.querySelector('.closeBtn');
+const overlay = document.getElementById('overlay');
+const pop = document.querySelector('.modal');
+function openModal(modal) {
+  if (modal == null) return;
+  modal.classList.add('activeModal');
+  overlay.classList.add('activeModal');
+}
+
+openModalBtn.forEach((button) => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget);
+    openModal(modal);
+  });
+});
+
+function closeModal() {
+  pop.classList.remove('activeModal');
+  overlay.classList.remove('activeModal');
+}
+
+function outsideClick(e) {
+  if (e.target === pop) {
+    pop.classList.remove('activeModal');
+    overlay.classList.remove('activeModal');
+  }
+}
+
+closeModalBtn.addEventListener('click', closeModal);
+overlay.addEventListener('click', outsideClick);
