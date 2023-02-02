@@ -594,8 +594,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: hsla(150, 12%, 26%, 0.473);
-  filter: blur(10px);
+  backdrop-filter: blur(10px);
   pointer-events: none;
 }
 
