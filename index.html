@@ -9,6 +9,7 @@
     <style> @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap'); </style>
 </head>
 <body>
+    <script src="js/validation.js"></script>
     <header class="header">
         <div class="navSec">
             <div class="logo">
@@ -239,9 +240,10 @@
                 <label for="msg" id="msgLb"></label>
                 <textarea name="msg" id="msg" placeholder="Type something" maxlength="500" rows="5" required>
                 </textarea>
-                <button class="btm" type="submit">
+                <button id="form-btm" class="btm" type="submit">
                     Get In touch
                 </button>
+                <span id="valTxt"></span>
             </form>
         </section>
     </main>
@@ -270,6 +272,5 @@
     </footer>
     <script src="js/main.js"></script>
     <script src="js/modal.js"></script>
-    <script src="js/validation.js"></script>
 </body>
 </html>
