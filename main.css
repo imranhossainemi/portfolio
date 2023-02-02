@@ -89,7 +89,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: hsl(0, 0%, 100%);
-  float: right;
 }
 
 .header nav .mobile-nav-btm.active {
@@ -168,6 +167,7 @@ body {
   align-items: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .works .title {
@@ -477,6 +477,132 @@ body {
   border: 1px solid hsla(0, 100%, 50%, 0.48);
 }
 
+/* Modal design for modile */
+
+.modal {
+  width: 315px;
+  height: 415px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid hsl(218, 25%, 35%);
+  border-radius: 8px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  background-color: hsl(0, 0%, 100%);
+  z-index: 9999;
+  overflow: auto;
+}
+
+.modal.activeModal {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.works .modal .closeBtnDiv {
+  position: absolute;
+  inset: 9% 0 0 85%;
+}
+
+.works .modal .closeBtnDiv .closeBtn {
+  width: 15px;
+  height: 15px;
+  background-image: url('images/x.png');
+  opacity: 0.8;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal .imgDesk {
+  display: none;
+}
+
+.works .modal h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: hsl(218, 54%, 20%);
+}
+
+.works .modal .tech {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px 0;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.works .modal .tech .tech-item {
+  color: hsl(218, 25%, 35%);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  padding: 8px 12px;
+  background-color: hsl(147, 11%, 83%);
+  border-radius: 4px;
+}
+
+.works .modal p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: hsl(218, 31%, 30%);
+}
+
+.works .modal .divBtn {
+  width: 100%;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.works .modal .divBtn .btnLive,
+.works .modal .divBtn .btnSource {
+  width: 141px;
+  padding: 8px 15px;
+  background-color: hsl(155, 54%, 46%);
+  border-radius: 4px;
+  color: hsl(0, 0%, 100%);
+  border: none;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(10px);
+  pointer-events: none;
+}
+
+#overlay.activeModal {
+  opacity: 1;
+  pointer-events: all;
+}
+
 /* Desktop version CSS */
 
 @media screen and (min-width: 768px) {
@@ -498,7 +624,7 @@ body {
   .header {
     position: absolute;
     width: 100%;
-    height: 72px;
+    height: 52px;
     top: 0;
     left: 0;
   }
@@ -707,5 +833,50 @@ body {
       top: 100px;
       border-radius: 50%;
     }
+  }
+
+  /* Modal Design For desktop */
+
+  .modal {
+    width: 920px;
+    height: 700px;
+  }
+
+  .works .modal .closeBtnDiv {
+    position: relative;
+    inset: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .works .modal .closeBtnDiv .closeBtn {
+    background-color: hsl(147, 11%, 83%);
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
+    float: right;
+  }
+
+  .modal .imgDesk {
+    display: block;
+  }
+
+  .modal .imgMob {
+    display: none;
+  }
+
+  .works .modal h2 {
+    width: 590px;
+  }
+
+  .works .modal .tech {
+    width: 290px;
+  }
+
+  .works .modal .divBtn {
+    width: 325px;
+    height: 200px;
+    position: absolute;
+    inset: 88% 0 0 59%;
   }
 }
