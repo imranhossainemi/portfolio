@@ -481,7 +481,7 @@ body {
 
 .modal {
   width: 315px;
-  height: 515px;
+  height: 415px;
   padding: 20px 10px;
   display: flex;
   flex-direction: column;
@@ -503,7 +503,7 @@ body {
 
 .works .modal .closeBtnDiv {
   position: absolute;
-  inset: 3% 0 0 85%;
+  inset: 9% 0 0 85%;
 }
 
 .works .modal .closeBtnDiv .closeBtn {
