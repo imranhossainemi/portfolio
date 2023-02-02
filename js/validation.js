@@ -8,10 +8,6 @@ function emailValidator() {
     if (emailRegx.test(email)) {
       document.getElementById('valTxt').innerHTML = 'Success!';
       document.getElementById('valTxt').style.color = 'green';
-    } else {
-      document.getElementById('valTxt').innerHTML = EMAIL_INVALID;
-      document.getElementById('valTxt').style.color = 'red';
-      event.preventDefault();
     }
   };
 }
