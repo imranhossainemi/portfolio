@@ -84,3 +84,18 @@ openModalBtn.forEach((button) => {
     openModal(modal);
   });
 });
+
+function closeModal() {
+  pop.classList.remove('activeModal');
+  overlay.classList.remove('activeModal');
+}
+
+function outsideClick(e) {
+  if (e.target === pop) {
+    pop.classList.remove('activeModal');
+    overlay.classList.remove('activeModal');
+  }
+}
+
+closeModalBtn.addEventListener('click', closeModal);
+overlay.addEventListener('click', outsideClick);
