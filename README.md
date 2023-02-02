@@ -67,8 +67,9 @@ For this portfolio template design I am using mobile first approach.
 ### Key Features <a name="key-features"></a>
 
 > Currently do not have any key features
+
+- **[Validate Email Input]**
 <!--
-- **[key_feature_1]**
 - **[key_feature_2]**
 - **[key_feature_3]**
 -->

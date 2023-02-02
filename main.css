@@ -6,6 +6,11 @@
   scroll-behavior: smooth;
 }
 
+b {
+  color: hsl(155, 54%, 42%);
+  text-decoration: underline;
+}
+
 body {
   max-width: 375px;
   height: auto;
