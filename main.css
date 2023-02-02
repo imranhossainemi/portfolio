@@ -494,6 +494,7 @@ body {
   transition: 200ms ease-in-out;
   background-color: hsl(0, 0%, 100%);
   z-index: 9999;
+  overflow: auto;
 }
 
 .modal.activeModal {
@@ -536,7 +537,7 @@ body {
   flex-wrap: wrap;
   width: 100%;
   padding: 20px 0;
-  justify-content: space-between;
+  gap: 10px;
   align-items: flex-start;
 }
 
@@ -594,6 +595,7 @@ body {
   right: 0;
   bottom: 0;
   background-color: hsla(150, 12%, 26%, 0.473);
+  filter: blur(10px);
   pointer-events: none;
 }
 
@@ -837,8 +839,7 @@ body {
   /* Modal Design For desktop */
 
   .modal {
-    width: 820px;
-    height: 933px;
+    width: 920px;
   }
 
   .works .modal .closeBtnDiv {
@@ -876,6 +877,6 @@ body {
     width: 325px;
     height: 200px;
     position: absolute;
-    inset: 60% 0 0 59%;
+    inset: 75% 0 0 59%;
   }
 }
