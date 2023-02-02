@@ -839,6 +839,7 @@ body {
 
   .modal {
     width: 920px;
+    height: 700px;
   }
 
   .works .modal .closeBtnDiv {
