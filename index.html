@@ -232,11 +232,11 @@
                 I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
             </h2>
             <form action="https://formspree.io/f/xzbqzryz" method="POST" class="form">
-                <label></label>
+                <label for="name" id="nameLb"></label>
                 <input id="name" type="text" name="name" placeholder="Full Name" maxlength="30" required>
-                <label></label>
+                <label for="email" id="emailLb"></label>
                 <input id="email" type="email" name="email" placeholder="Email address" required>
-                <label></label>
+                <label for="msg" id="msgLb"></label>
                 <textarea name="msg" id="msg" placeholder="Type something" maxlength="500" rows="5" required>
                 </textarea>
                 <button class="btm" type="submit">
@@ -270,5 +270,6 @@
     </footer>
     <script src="js/main.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/validation.js"></script>
 </body>
 </html>
